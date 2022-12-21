@@ -4,329 +4,194 @@
     Layout = "_Layout1";
 }
 <!-- slider section <div class="hero_area " style="margin-top:-679px">-->
-    <section class="slider_section " >
-        <div id="customCarousel1" class="carousel slide" data-ride="carousel" >
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="detail-box">
-                                    <h5>
-                                        FPTBook 
-                                    </h5>
-                               
-                                    <h1>
-                                        For All Your <br>
-                                        Reading Needs
-                                    </h1>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
-                                    </p>
-                                    <a asp-controller="Client" asp-action="About">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="img-box">
-                                    <img src="~/Image/slider-img.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #1d1d1d;
+    }
 
 
-                <div class="carousel-item">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="detail-box">
-                                    <h5>
-                                        Bostorek Bookstore
-                                    </h5>
-                                    <h1>
-                                        For All Your <br>
-                                        Reading Needs
-                                    </h1>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
-                                    </p>
-                                    <a asp-controller="Client" asp-action="About">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="img-box">
-                                    <img src="~/Image/slider-img.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="detail-box">
-                                    <h5>
-                                        Bostorek Bookstore
-                                    </h5>
-                                    <h1>
-                                        For All Your <br>
-                                        Reading Needs
-                                    </h1>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
-                                    </p>
-                                    <a href="">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="img-box">
-                                    <img src="~/Image/slider-img.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel_btn_box" >
-                <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
-                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </section>
+    h6 {
+        color: #D8D8D8;
+    }
 
+    button {
+        font-size: 0.8rem;
+        font-weight: 700;
+        outline: none;
+        border: none;
+        background-color: #1d1d1d;
+        color: aliceblue;
+        padding: 13px 30px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.3s ease;
+    }
 
+        button:hover {
+            background-color: #3a3833;
+        }
 
+    #home {
+        background-image: url("https://wallpaperaccess.com/full/1426875.jpg");
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: cover;
+        background-position: top 30px center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
-<section class="about_section layout_padding">
-    <div class="container ">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="img-box">
-                    <img src="~/Image/about-img.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="detail-box">
-                    <div class="heading_container">
-                        <h2>
-                            About Our Bookstore
-                        </h2>
-                    </div>
-                    <p>
-                        At cumque tenetur iste molestiae, vel eum reiciendis assumenda! Numquam, repudiandae. Consequuntur obcaecati recusandae aliquam, amet doloribus eius dolores officiis cumque? Quibusdam praesentium pariatur sapiente mollitia, amet hic iusto voluptas! Iusto quo earum vitae excepturi, ipsam aliquid deleniti assumenda culpa deserunt.
-                    </p>
-                    <a asp-controller="Client" asp-action="About">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        #home span {
+            color: coral;
+        }
 
-<!-- end about section -->
-<!-- client section -->
+    hr {
+        width: 150px;
+        height: 5px;
+        background-color: #fb774b;
+    }
 
-<section class="client_section layout_padding">
-    <div class="container ">
-        <div class="heading_container heading_center">
-            <h2>
-                What Says Customers
-            </h2>
-            <hr>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="client_container ">
-                    <div class="detail-box">
-                        <p>
-                            Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-                        </p>
-                        <span>
-                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <div class="client_id">
-                        <div class="img-box">
-                            <img src="~/Image/c1.jpg" alt="">
-                        </div>
-                        <div class="client_name">
-                            <h5>
-                                Jone Mark
-                            </h5>
-                            <h6>
-                                Student
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mx-auto">
-                <div class="client_container ">
-                    <div class="detail-box">
-                        <p>
-                            Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-                        </p>
-                        <span>
-                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <div class="client_id">
-                        <div class="img-box">
-                            <img src="~/Image/c2.jpg" alt="">
-                        </div>
-                        <div class="client_name">
-                            <h5>
-                                Anna Crowe
-                            </h5>
-                            <h6>
-                                Student
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mx-auto">
-                <div class="client_container ">
-                    <div class="detail-box">
-                        <p>
-                            Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-                        </p>
-                        <span>
-                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <div class="client_id">
-                        <div class="img-box">
-                            <img src="~/Image/c3.jpg" alt="">
-                        </div>
-                        <div class="client_name">
-                            <h5>
-                                Hilley James
-                            </h5>
-                            <h6>
-                                Student
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    .star {
+        padding: 10px 0;
+    }
 
-<!-- end client section -->
-<!-- blog section -->
+        .star i {
+            font-size: 0.8rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: goldenrod;
+        }
 
-<section class="blog_section layout_padding">
+    .product {
+        cursor: pointer;
+        margin-bottom: 2rem;
+    }
+
+        .product img {
+            transition: 0.3s all;
+        }
+
+        .product:hover img {
+            opacity: 0.7;
+        }
+
+        .product .buy-btn {
+            background: #fb774b;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: 0.3s all;
+        }
+
+        .product:hover .buy-btn {
+            transform: translateY(0);
+            opacity: 1;
+        }
+</style>
+
+<section id="home">
     <div class="container">
-        <div class="heading_container heading_center">
-            <h2>
-                From Our Blog
-            </h2>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="box">
-                    <div class="img-box">
-                        <img src="~/Image/b1.jpg" alt="">
-                        <h4 class="blog_date">
-                            <span>
-                                19 January 2021
-                            </span>
-                        </h4>
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            Eius, dolor? Vel velit sed doloremque
-                        </h5>
-                        <p>
-                            Incidunt magni explicabo ullam ipsa quo consequuntur eveniet illo? Aspernatur nam dolorem a neque? Esse eaque dolores hic debitis cupiditate, ad beatae voluptatem numquam dignissimos ab porro
-                        </p>
-                        <a href="">
-                            Read More
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="box">
-                    <div class="img-box">
-                        <img src="~/Image/b2.jpg" alt="">
-                        <h4 class="blog_date">
-                            <span>
-                                19 January 2021
-                            </span>
-                        </h4>
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            Minus aliquid alias porro iure fuga
-                        </h5>
-                        <p>
-                            Officiis veritatis id illo eligendi repellat facilis animi adipisci praesentium. Tempore ab provident porro illo ex obcaecati deleniti enim sequi voluptas at. Harum veniam eos nisi distinctio! Porro, reiciendis eius.
-                        </p>
-                        <a href="">
-                            Read More
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h5>New Arraivials</h5>
+        <h1><span>Best Price</span> This Year</h1>
+        <p>Library offers your very comfortable and enjoyment<br>in product experience</p>
+        <button>Shop Now</button>
     </div>
 </section>
 
-<!-- end blog section -->
-<!-- contact section -->
+<section id="featured" class="my-5 pb-5">
+    <div class="container text-center mt-5 py-5">
+        <h3>Best Selling Book</h3>
+        <hr class="mx-auto">
+        <p>Here you can check out books with fair price on Library</p>
+    </div>
+    <div class="row mx-auto container-fluid">
 
-<section class="contact_section layout_padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 ">
-                <div class="heading_container ">
-                    <h2 class="">
-                        Contact Us
-                    </h2>
-                </div>
-                <form action="#">
-                    <div>
-                        <input type="text" placeholder="Name" />
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Email" />
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Pone Number" />
-                    </div>
-                    <div>
-                        <input type="text" class="message-box" placeholder="Message" />
-                    </div>
-                    <div class="btn-box">
-                        <button>
-                            SEND
-                        </button>
-                    </div>
-                </form>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_12629_1.jpg" alt="">
+            <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
             </div>
-            <div class="col-md-6">
-                <div class="img-box">
-                    <img src="~/Image/contact-img.png" alt="">
-                </div>
+            <h5 class="p-name">Dấu Chân Trên Cát</h5>
+            <h4 class="p-price">15$</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg" alt="" width="653" height="684">
+            <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
             </div>
+            <h5 class="p-name">Nhà Giả Kim</h5>
+            <h4 class="p-price">10$</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="https://cdn0.fahasa.com/media/catalog/product/t/i/tieu-thuyet-chuyen-the---thanh-guom-diet-quy---cau-chuyen-ve-tinh-anh-em-va-doi-diet-quy-obi.jpg" alt="" width="653" height="684">
+            <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+            <h5 class="p-name">Thanh Gươm Diệt Quỷ</h5>
+            <h4 class="p-price">30$</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_217480.jpg" alt="" width="653" height="684">
+            <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+            <h5 class="p-name">
+                Cây Cam Ngọt Của Tôi
+            </h5>
+            <h4 class="p-price">20$</h4>
+            <button class="buy-btn">Buy Now</button>
         </div>
     </div>
 </section>
