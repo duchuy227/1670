@@ -1,79 +1,120 @@
 ﻿@{
     Layout = "_Layout1";
 }
-<div class="container">
-<section class="about_section layout_padding">
-    <div class="container ">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="img-box">
-                    <img src="~/Image/about-img.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="detail-box">
-                    <div class="heading_container">
-                        <h2>
-                            About Our Bookstore
-                        </h2>
-                           
-                    </div>
-                    <p style="text-align: justify">
-                       FPTBook works to connect readers with independent booksellers all over the world.
-                       We believe local bookstores are essential community hubs that foster culture, curiosity, and a love of 
-                       reading, and we're committed to helping them thrive.
-                       Every purchase on the site financially supports independent bookstores. Our platform gives independent 
-                       bookstores tools to compete online and financial support to help them maintain their presence in local 
-                       communities.,,,,,
-                    </p>
-                    
-                    
-                </div>
-            </div>
+<style>
+    import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container1 {
+        background-color: #ddd;
+        width: 100%;
+        height: 100vh;
+    }
+
+        .container1 .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-size: 22px;
+            color: #222;
+            letter-spacing: 1.5px;
+            padding: 50px 0px;
+        }
+
+            .container1 .title h1::after {
+                content: "";
+                height: 6px;
+                width: 180px;
+                background-color: #222;
+                border-radius: 6px;
+                position: relative;
+                display: block;
+                margin: auto;
+            }
+
+    .content {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        margin: 30px auto;
+    }
+
+        .content .article {
+            box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+            background-color: #eee;
+            padding: 25px 25px;
+        }
+
+            .content .article h2 {
+                color: #00c8ff;
+                font-size: 22px;
+                line-height: 1.5;
+                letter-spacing: 1px;
+            }
+
+            .content .article p {
+                margin-top: 30px;
+                font-size: 19px;
+                line-height: 1.5;
+                color: #222;
+            }
+
+            .content .article a {
+                font-size: 22px;
+                text-decoration: none;
+                display: inline-block;
+                padding: 12px 35px;
+                background-color: #cc0000;
+                border-radius: 25px;
+                color: #fff;
+                border: 1px solid #cc0000;
+                letter-spacing: 1.5px;
+                margin-top: 35px;
+                margin-left: 100px;
+            }
+
+                .content .article a:hover {
+                    background-color: #fff;
+                    color: #cc0000;
+                    transition: 0.2s ease;
+                }
+
+    .image-section {
+        width: 100%;
+        margin: auto;
+    }
+
+        .image-section img {
+            width: 500px;
+            height: 425px;
+        }
+</style>
+
+<div class="container1">
+    <div class="title">
+        <h1>About Library</h1>
+    </div>
+    <div class="content">
+        <div class="article">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </p>
+            <a href="#" class="button">Read More</a>
         </div>
-        <div class="container col-md-12" style="margin-top:100px" >
-            <img src="~/Image/logo.png" width="250px" style="margin-left:400px"/>
-                <div class="heading_container">
-                    <h2 style="margin-left:430px">
-                        Our History
-                    </h2>
-                </div>
-            <div style="text-align:justify; margin-left: 130px" class="col-md-9">
-             <p>
-                FPTBook began as an idea to help support bookstores and their communities as more and more people
-                are buying their books online. We saw an opportunity to create an alternative to Amazon for socially-conscious
-                online shoppers. Amazon sells over 60% of all books in the US and is growing. That shift threatens the
-                future of bookstores and will hurt readers, authors, and publishers who rely on a diverse, healthy
-                ecosystem for books. We had a better idea — give readers the convenience of online shopping while
-                supporting independent bookstores at the same time.<br />
-                We launched in October of 2022, with just 88 bookstore partners and a team of four passionate book people.<br />
-
-                As the COVID-19 pandemic surged, our growing platform helped our community of independent booksellers
-                survive shutdowns. That spring, traffic to Bookshop.org hit 1 million users in a single day. By the end
-                of 2022 we had grown to over 1,000 bookstores and distributed over ten million dollars in profits.
-                FPTBookhas since expanded internationally, launching in the UK and Spain.<br />
-
-                78% of our customers said they regularly bought books from Amazon before they made the switch.
-                </p>
-
-                
-            </div>
-               
+        <div class="image-section">
+            <img src="~/Image/about.jpg">
         </div>
-
-     <!--   <div class="container row">
-                <div class="heading_container">
-                <h2 style="margin-left:430px; font-size:50px">
-                   F.A.Q.
-                </h2>
-            </div>
-            <div class="col-md-6">
-                <div class="w">
-
-                </div>
-            </div>
-               </div>-->
-
-        </div>
-</section>
+    </div>
 </div>
