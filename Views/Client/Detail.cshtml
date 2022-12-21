@@ -1,0 +1,64 @@
+﻿@model FPTBook.Models.Book
+
+@{
+    Layout = "_Layout1";
+}
+<div class="row container" style="padding-bottom: 300px; padding-top:20px">
+    <div style="padding-top: 95px" class="col-md-4 text-center " >
+        <img src="@Model.Image" width="200" height="300" /><br />
+           <a class="btn btn-primary" asp-controller="Client" asp-action="Store" style="margin:20px 40px 0px 0px">Back to Store</a>  
+    </div>
+    
+
+    <div class="col-md-8">
+        <h3 class="text-info text-center">Detail Infomation</h3>
+        <table class="table table-info table-bordered">
+            <tr>
+                <th>Title</th>
+                <td>@Model.Title</td>
+            </tr>
+            <tr>
+                <th>Author</th>
+                <td>@Model.Author</td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td>@Model.Category.Name</td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
+                <td>@Model.Quantity</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>@Model.Price</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td style="text-align:justify">@Model.Description</td>
+            </tr>
+        </table>
+
+        @if(User.Identity.IsAuthenticated && User.IsInRole("Customer"))
+        {
+            <form method="post" asp-controller="Order" asp-action="MakeOrder" asp-route-id="@Model.Id" asp-route-price="@Model.Price"
+            asp-route-customerName="@User.Identity.Name">
+                <div class="text-center row" style="margin-left:520px">
+                    <div>
+                        <input type="hidden" name="book" />
+                    </div>
+                    <div class="col-md-2 mr-5">
+                        <input type="number" name="quantity" min="1" max="@Model.Quantity" value="1" class="form-control" style="width: 70px">
+                    </div>
+                    <div class="col-md-2">
+                        <input class="btn btn-success" type="submit" value="Order" style="width:100px">
+                    </div>
+                </div>
+            </form>
+        }
+        else{
+            <h5 class="text-danger">You must be logged in to order a book.</h5>
+        }
+            
+        </div>
+    </div>
