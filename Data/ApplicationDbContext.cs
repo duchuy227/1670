@@ -112,13 +112,13 @@ namespace FPTBook.Data
             var art = new Category
             {
                 Id = 1,
-                Name = "Arts & Music",
+                Name = "Romance",
                 Description = "Advance your understanding of black and white photography, color processing, or find the perfect lighting for portrait shots with our selection of photography books devoted to the learning and curious artist. Or perhaps you prefer to channel your creative side with a backstage tour of the ballet, an intimate look into the lives of Hollywood icons, or by delving into the history of fashion."
             };
             var biographies = new Category
             {
                 Id = 2,
-                Name = "Biographies",
+                Name = "Football",
                 Description = "Whether it's the final journey of a spiritual mentor or the art of innovation from a young computer genius, the courage to survive insurmountable odds, or the private and personal autobiography of a public personality, you'll find these stories and much more in our Biographies and Memoirs section."
             };
             var comics = new Category
@@ -130,13 +130,13 @@ namespace FPTBook.Data
             var travel = new Category
             {
                 Id = 4,
-                Name = "Travel",
+                Name = "Honor",
                 Description = "Whether you’re looking for a great escape or planning a retreat from the pressure of everyday life, you’ll find the Travel Book you’re looking for at Thriftbooks.com. You can learn what it’s like to live in another culture, jump into the history and making of some of the most beautiful and celebrated places and people on this planet. Prepare for your next trip or get lost in a culture far away – all at the lowest prices."
             };
             var education = new Category
             {
                 Id = 5,
-                Name = "Education",
+                Name = "Business",
                 Description = "Whether it's the final journey of a spiritual mentor or the art of innovation from a young computer genius, the courage to survive insurmountable odds, or the private and personal autobiography of a public personality, you'll find these stories and much more in our Biographies and Memoirs section."
             };
             builder.Entity<Category>().HasData(art, comics, biographies, travel, education);
