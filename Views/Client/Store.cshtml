@@ -3,6 +3,11 @@
     Layout = "_Layout1";
 }
 
+@{
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'
+          rel='stylesheet'>
+}
+
 @*<div class="container col-md-6 mt-4">
     <form class="search_form" method="post" asp-controller="Client" asp-action="Search" style="width:600px; margin-left:240px" >
         <input type="search" class="form-control" placeholder="Search here..." name="keyword" style="border: 2px solid #274D3C" required>
@@ -139,15 +144,32 @@
 .parts-container .box .details:hover {
     color: 	#FF4500;
     transition: 0.5s;
-    transform: scale(1.1);
+    transform: scale(0.8);
     text-decoration:none;
+}
+
+.heading span {
+    margin-left: 270px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: rgba(255, 70, 137, 1);
+}
+
+.heading h2 {
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:700;
+    color: rgba(169, 157, 255, 1);
+    margin-left: 240px;
 }
 </style>
 
 
 <section id="parts" class="parts">
     <div class="heading">
-        <span>All Types of Auto Parts</span>
+        <span>All Books of Library</span>
         <h2>Our Car Is Always Execelent</h2>
     </div>
     <div class="parts-container container">
@@ -157,7 +179,7 @@
             <img src="@books.Image" alt="">
              <h3>@books.Title</h3>
              <span>@books.Price $</span>
-            <i class="bx bxs-star">(100 Reviews)</i>
+             <i class="bx bxs-star"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>100Views</i>
              @if (books.Quantity == 0)
                         {
                             <h6 class="card-title">Out of Stock. Please come back later.</h6>

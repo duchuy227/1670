@@ -50,44 +50,44 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" >
 
-            <ul class="navbar-nav" style="margin-left: 50px; font-weight: bold">
+            <ul class="navbar-nav navbar-light" style="margin-left: 50px; font-weight: bold">
                         @if (User.Identity.IsAuthenticated && User.IsInRole("Administrator"))
                         {
-                    <li class="nav-item active" style="margin-left: 50px; margin-right: 50px; font-size: 20px; font-weight: bold; color: white">
-                                <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Index">Manage</a>
+                    <li class="nav-item active" style="margin-left: 50px; margin-right: 50px; font-size: 20px; font-weight: bold">
+                        <a style="color:white" class="nav-link" asp-area="" asp-controller="Admin" asp-action="Index">Manage</a>
                             </li>
                         }
 
                         @if (User.Identity.IsAuthenticated && User.IsInRole("BookOwner"))
                         {
-                    <li class="nav-item active" style="margin-left: 50px; font-size: 20px; font-weight: bold; color: white">
-                                <a class="nav-link" asp-area="" asp-controller="Book" asp-action="Index">Manage</a>
+                    <li class="nav-item active" style="margin-left: 50px; font-size: 20px; font-weight: bold">
+                        <a style="color:white" class="nav-link" asp-area="" asp-controller="Book" asp-action="Index">Manage</a>
                             </li>
-                <li class="nav-item active" style="margin-left: 50px; font-size: 20px; font-weight: bold; color: white">
-                                <a class="nav-link pl-lg-0" asp-controller="Client" asp-action="Index">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item active" style="margin-left: 50px; font-size: 20px; font-weight: bold">
+                        <a style="color:white" class="nav-link pl-lg-0" asp-controller="Client" asp-action="Index">Home<span class="sr-only">(current)</span></a>
                             </li>
-                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold; color: white">
-                                <a class="nav-link" asp-controller="Client" asp-action="Store">Store</a>
+                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold">
+                        <a style="color:white" class="nav-link" asp-controller="Client" asp-action="Store">Store</a>
                             </li>
-                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold; color: white">
-                                <a class="nav-link" asp-controller="Client" asp-action="About"> About</a>
+                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold">
+                        <a style="color:white" class="nav-link" asp-controller="Client" asp-action="About">About</a>
                             </li>
-                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold; color: white">
-                                <a class="nav-link" asp-controller="Client" asp-action="Blog"> Blog </a>
+                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold">
+                        <a style="color:white" class="nav-link" asp-controller="Client" asp-action="Blog">Contact</a>
                             </li>
                         }
                         else{
-                    <li class="nav-item active" style="font-size: 20px; margin-left: 80px; font-weight: bold; color: white">
-                                <a class="nav-link pl-lg-0" asp-controller="Client" asp-action="Index">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item active" style="font-size: 20px; margin-left: 80px; font-weight: bold">
+                                <a style="color:white" class="nav-link pl-lg-0" asp-controller="Client" asp-action="Index">Home <span class="sr-only">(current)</span></a>
                             </li>
-                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold; color: white">
-                                <a class="nav-link" asp-controller="Client" asp-action="Store">Store</a>
+                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold">
+                                <a style="color:white" class="nav-link" asp-controller="Client" asp-action="Store">Store</a>
                             </li>
-                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold; color: white">
-                                <a class="nav-link" asp-controller="Client" asp-action="About"> About</a>
+                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold">
+                                <a style="color:white" class="nav-link" asp-controller="Client" asp-action="About">About</a>
                             </li>
-                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold; color: white">
-                                <a class="nav-link" asp-controller="Client" asp-action="Blog"> Blog </a>
+                    <li class="nav-item" style="margin-left: 50px; font-size: 20px; font-weight: bold">
+                                <a style="color:white" class="nav-link" asp-controller="Client" asp-action="Blog">Contact</a>
                             </li>
                         }
                             
@@ -121,38 +121,38 @@
             <!-- Right -->
             <div>
                 <a href="https://www.facebook.com/">
-                    <button type="button" class="btn btn-primary">
+                    <button style="letter-spacing: 2px" class="btn btn-primary">
                         <i class="fab fa-facebook"><b> Facebook</b></i>
                     </button>
                 </a>
 
                 <a href="https://github.com/duchuy2278/assignmentcloud">
-                    <button type="button" class="btn btn-success">
+                    <button style="letter-spacing: 2px" class="btn btn-success">
                         <i class="fab fa-github"><b> Github</b></i>
                     </button>
                 </a>
 
                 <a href="https://twitter.com/">
-                    <button type="button" class="btn btn-info">
-                        <i class="fab fa-twitter"><b> Twitter</b></i>
+                    <button class="btn btn-info">
+                        <i style="letter-spacing: 2px" class="fab fa-twitter"><b> Twitter</b></i>
                     </button>
                 </a>
 
                 <a href="https://www.google.com.vn/">
-                    <button type="button" class="btn btn-danger">
-                        <i class="fab fa-google"><b> Google</b></i>
+                    <button  class="btn btn-danger">
+                        <i style="letter-spacing: 2px" class="fab fa-google"><b> Google</b></i>
                     </button>
                 </a>
 
                 <a href="https://www.instagram.com/">
-                    <button type="button" class="btn btn-warning">
-                        <i class="fab fa-instagram"><b> Instagram</b></i>
+                    <button class="btn btn-warning">
+                        <i style="letter-spacing: 2px" class="fab fa-instagram"><b> Instagram</b></i>
                     </button>
                 </a>
 
                 <a href="https://www.linkedin.com/">
-                    <button type="button" class="btn btn-primary">
-                        <i class="fab fa-linkedin"><b> Linkedln</b></i>
+                    <button class="btn btn-primary">
+                        <i style="letter-spacing: 2px" class="fab fa-linkedin"><b> Linkedln</b></i>
                     </button>
                 </a>
 
@@ -168,8 +168,9 @@
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-3">
                         <!-- Content -->
-                        <h1 style="font-size: 30px; color: white; margin-top: 30px">
-                            <i class="fas fa-book-open"> Amazing Library</i>
+                        <h1 style="font-size: 30px; color: white; margin-top: 30px; letter-spacing: 1px">
+                            <i style="font: 30px" class="fas fa-book-open"></i>
+                            Amazing Library
                         </h1>
 
                         <p style="color: white; font-weight: bold; font-size: 18px; margin-top: 30px">
@@ -193,17 +194,17 @@
                             Support
                         </h6>
                         <p>
-                            <i class="fas fa-question-circle" style="text-transform: uppercase;"> About</i>
+                            <i class="fas fa-question-circle" style="text-transform: uppercase; letter-spacing: 2px"> About</i>
                         </p>
                         <p>
                             
-                            <i class="fas fa-comment" style="text-transform: uppercase;"> Feedback</i>
+                            <i class="fas fa-comment" style="text-transform: uppercase; letter-spacing: 2px"> Feedback</i>
                         </p>
                         <p>
-                            <i class="fas fa-cart-plus" style="text-transform: uppercase;"> Order</i>
+                            <i class="fas fa-cart-plus" style="text-transform: uppercase; letter-spacing: 2px"> Order</i>
                         </p>
                         <p>
-                            <i class="fas fa-phone-alt" style="text-transform: uppercase;"> Contact Us</i>
+                            <i class="fas fa-phone-alt" style="text-transform: uppercase; letter-spacing: 2px"> Contact Us</i>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -213,10 +214,10 @@
                         <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold; color: white; font-size: 20px">
                             Contact
                         </h6>
-                        <p><i class="fas fa-home me-3"></i> G407 Số 2 Phạm Văn Bạch</p>
+                        <p><i class="fas fa-home me-3"></i> G410 Số 2 Phạm Văn Bạch</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
-                            atnshop@gmail.com
+                            amazinglibrary@gmail.com
                         </p>
                         <p><i class="fa fa-phone"></i> +84 96 136 6036</p>
                         <p><i class="fa fa-phone"></i> + 01 234 567 89</p>
