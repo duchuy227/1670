@@ -26,6 +26,8 @@ namespace FPTBook.Models
         public string OrderName { get; set; }
         [Required (ErrorMessage ="Status cannot be empty")]
         public int Status { get; set; }
+
+
         public int BookId { get; set; }
         public Book Book { get; set; }
     }

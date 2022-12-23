@@ -16,7 +16,7 @@ namespace FPTBook.Controllers
         }
 
         [Authorize (Roles = "Customer")]
-        public IActionResult MakeOrder(int id, int quantity, string customerName, int price )
+        public IActionResult MakeOrder(int id, int quantity, string customerName, int price)
         {
             TempData["ok"] = "Order successfully !";
             var order = new Order();
